@@ -1,0 +1,431 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: greens"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 5,
+            "value": "#AC1"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 5584082200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Booking flight in OneWay trip",
+        "description": "",
+        "id": "book-a-flight-oneway;booking-flight-in-oneway-trip",
+        "after": [
+          {
+            "result": {
+              "duration": 2015781200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9792221100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The User is in Delta homepage",
+            "match": {
+              "location": "HomePageSteps.the_User_is_in_Delta_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3652268600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user enters source and destination",
+            "match": {
+              "location": "HomePageSteps.the_user_enters_source_and_destination(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ATL",
+                  "MSP"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1103666300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user select oneway trip",
+            "match": {
+              "location": "HomePageSteps.the_user_select_oneway_trip()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6207589600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user select date from Web calendar \"01/29/2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01/29/2020",
+                  "offset": 40
+                }
+              ],
+              "location": "HomePageSteps.the_user_selct_date_from_Web_calendar(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5562109100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "HomePageSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3001119800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user should be in search results page",
+            "match": {
+              "location": "FlightSearchResultsSteps.the_user_should_be_in_search_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Book A flight oneway",
+    "description": "",
+    "id": "book-a-flight-oneway",
+    "keyword": "Feature",
+    "uri": "OneWay.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@US0004"
+      },
+      {
+        "line": 2,
+        "name": "@Regression"
+      },
+      {
+        "line": 2,
+        "name": "@Sprint1"
+      },
+      {
+        "line": 2,
+        "name": "@Smoke"
+      },
+      {
+        "line": 2,
+        "name": "@bookaflight"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4007067400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "To verify flight details in one way search results",
+        "description": "",
+        "id": "to-verify-flight-details-in-search-results;to-verify-flight-details-in-one-way-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 901639000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10653092000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The User is in Delta homepage",
+            "match": {
+              "location": "HomePageSteps.the_User_is_in_Delta_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10132011200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user selects book menu option",
+            "match": {
+              "location": "HomePageSteps.the_user_selects_book_menu_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6065556000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user fill in the details",
+            "match": {
+              "location": "HomePageSteps.the_user_fill_in_the_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ATL",
+                  "MSP",
+                  "One Way",
+                  "01/30/2020",
+                  "1 Passenger"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 389133800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user clicks the submit button",
+            "match": {
+              "location": "HomePageSteps.the_user_clicks_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000978600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user verifies the search results details",
+            "match": {
+              "location": "FlightSearchResultsSteps.the_user_verifies_the_search_results_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "To verify flight details in search results",
+    "description": "",
+    "id": "to-verify-flight-details-in-search-results",
+    "keyword": "Feature",
+    "uri": "OneWaySearchResults.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Greens tech"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4195643800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "verify-round-trip-functionality;",
+        "after": [
+          {
+            "result": {
+              "duration": 1131602000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14135802800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The User is in Delta homepage",
+            "match": {
+              "location": "HomePageSteps.the_User_is_in_Delta_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4428889700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user selects source and destination",
+            "match": {
+              "location": "HomePageSteps.the_user_selects_source_and_destination(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ATL",
+                  "MSP"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2592167300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user selects trip type, dates and number of passengers",
+            "match": {
+              "location": "HomePageSteps.the_user_selects_trip_type_dates_and_number_of_passengers(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Round Trip",
+                  "01/25/2020",
+                  "01/30/2020",
+                  "2 Passengers"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5001445000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user should see the list of flights",
+            "match": {
+              "location": "FlightSearchResultsSteps.the_user_should_see_the_list_of_flights(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "DL 2811",
+                  "DL 2823",
+                  "DL 2827",
+                  "DL 2815",
+                  "DL 2819"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify round trip functionality",
+    "description": "",
+    "id": "verify-round-trip-functionality",
+    "keyword": "Feature",
+    "uri": "RoundTrip.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  }
+]
