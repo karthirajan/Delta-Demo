@@ -43,7 +43,7 @@ public class CreateWriteAndReadDataInExcel {
 		
 	}	
 	public void setFile(String fileName) throws IOException {
-	//	System.out.println("setFile called...");
+		System.out.println("setFile called...");
 
 		if (StringUtils.isNotBlank(fileName)) {
 			file = new File("C:\\DynamicScenario\\" + fileName + ".xlsx");			
@@ -61,7 +61,7 @@ public class CreateWriteAndReadDataInExcel {
 					//System.out.println("else file_name-------" + file.getName());
 				}
 			} else {
-				//System.out.println("Directory already exists ...");		
+				System.out.println("Directory already exists ...");		
 
 			}
 		}
@@ -72,7 +72,7 @@ public class CreateWriteAndReadDataInExcel {
 	}
 
 	public void getExistingWorkbook() {
-		//System.out.println("getExistingWorkbook called....");
+		System.out.println("getExistingWorkbook called....");
 		try {
 			FileInputStream fis = new FileInputStream(getFile());
 			workbook = new XSSFWorkbook(fis);
